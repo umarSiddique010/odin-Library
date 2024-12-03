@@ -22,15 +22,16 @@ This project is assignment project from JavaScript advance section of The Odin P
 - Form creation and input validation
 
 ## CSS
-- Box model
 - Flex box
+- Form style
 - Box shadow
 - Text shadow
 - Grid
 - Transition
 - Transform
+- Position: relative, absolute, static
+- Box model
 - Element selector including child Selector
-- Form style
 - Responsive
 - Media query
 
