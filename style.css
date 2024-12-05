@@ -32,7 +32,8 @@ form {
     flex-wrap: wrap;
     gap: 20px;
     padding: 30px;
-    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
     align-self:center ;
 }
 
@@ -84,7 +85,6 @@ input, select, #submit {
     flex-wrap: wrap;
     gap: 20px;
     padding: 30px;
-    margin-left: 10%;
 
 }
 
@@ -187,3 +187,21 @@ input, select, #submit {
         gap: 10px;
     }
 }
+
+
+@media (min-width: 538px) and (max-width: 776px) {
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 36%;
+    }
+
+  }
+
+  @media (min-width: 760px)and (max-width: 1055px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  }
+  

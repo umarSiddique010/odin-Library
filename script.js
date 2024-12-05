@@ -56,9 +56,14 @@ function addBookToLibrary(e) {
     bookTitle === "" ||
     bookAuthor === "" ||
     bookPages === "" ||
-    bookRead === ""
-  )
+    bookRead === ""  ||
+    isNaN(bookPages)
+  ) {
+
+    emptyingInputValues()
     return false;
+  }
+  
 
   const newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead);
   myLibrary.push(newBook);
@@ -101,8 +106,17 @@ function addBookToLibrary(e) {
 
   display.appendChild(paraBox);
 
-  bookTitleInput.value = "";
-  bookAuthorInput.value = "";
-  bookPagesInput.value = "";
-  bookReadInput.value = "";
+  emptyingInputValues()
+
+
+
+  function emptyingInputValues() {
+    bookTitleInput.value = "";
+    bookAuthorInput.value = "";
+    bookPagesInput.value = "";
+    bookReadInput.selectedIndex = 0;
+  }
 }
+
+
+
